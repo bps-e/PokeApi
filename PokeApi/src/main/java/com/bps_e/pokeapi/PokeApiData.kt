@@ -695,13 +695,13 @@ public object PokeApiData {
             @Serializable
             public data class Decrease(
                 @SerialName("change") val change: Int,
-                @SerialName("move") val move: List<PokeApiData.Name>,
+                @SerialName("move") val move: PokeApiData.Name,
             )
 
             @Serializable
             public data class Increase(
                 @SerialName("change") val change: Int,
-                @SerialName("move") val move: List<PokeApiData.Name>,
+                @SerialName("move") val move: PokeApiData.Name,
             )
         }
 
@@ -715,6 +715,8 @@ public object PokeApiData {
         public data class Characteristic(
             @SerialName("url") val url: String,
         )
+
+
 
         @Serializable
         public data class Name(
